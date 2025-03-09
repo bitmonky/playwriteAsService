@@ -1,14 +1,10 @@
 const playwright = require('playwright');
 
-/*
-BitMonky Doge Key Pair Server
-*/
-
 const https = require('https');
 const fs = require('fs');
 const options = {
-  key: fs.readFileSync('/antnode/keys/privkey.pem'),
-  cert: fs.readFileSync('/antnode/keys/fullchain.pem')
+  key: fs.readFileSync('keys/privkey.pem'),
+  cert: fs.readFileSync('keys/fullchain.pem')
 };
 
 var server = https.createServer(options, (req, res) => {
