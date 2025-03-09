@@ -2,10 +2,10 @@
 
 ## Here some sample PHP showing how to call the servce
 
-<div>
+```
   function nodeWebPageInfo($furl){
-      // get the IP address of your service from a database or config file out side of the server root!
-    
+      /* get the IP address of your service from a database or config file out side of the server root!
+      
       $node = $rec['dnodAddress'];
       $host = "https://".$node.":13385";
       $url  = "/netREQ/msg=";
@@ -53,5 +53,6 @@ function tryFetchURL($myURL,$t=5,$allowLocal=false){
   curl_close($crl);
   return $ret;
 }
-</div>
+```
+
 
